@@ -1,0 +1,102 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    min-height: 100vh;
+    background:url("../asset/images/login_BG.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: lightblue;
+    box-shadow:0 0 5px ;
+    border-radius: 8px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+input{
+     width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid lightgray;
+      font-size: 14px;
+}
+
+.role{
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.showpass{
+    margin: 5px 0 15px;
+    font-size: 14px;
+}
+.showpass input{
+    width: auto;
+    height: auto;
+    margin-right: 3px;
+}
+
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    background: rgb(57, 179, 195);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgb(43, 114, 159);
+}
+.signup{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.err{
+  display:block;
+  min-height:16px;
+  color:#b00020;
+  font-size:13px;
+}
+.err.gen{
+  text-align:center;
+  margin-top:10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 500px){
+    .container{
+        width: 90%;
+        padding: 20px;
+        margin: 50px auto;
+    }
+}
